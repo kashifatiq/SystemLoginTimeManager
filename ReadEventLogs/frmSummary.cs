@@ -30,6 +30,7 @@ namespace ReadEventLogs
             lblFirstLoginTime.Text = entries.TimeGenerated.ToShortTimeString();
             TimeSpan ts = DateTime.Now.Subtract(entries.TimeGenerated);
             lblTotalTimeInOffice.Text = "Your total time spent in office until now = " + ts.Hours.ToString() + ":" + ts.Minutes.ToString();
+            lblsevenhours.Text = "7 hours will be completed at = " + entries.TimeGenerated.AddHours(7).ToShortTimeString();
         }
 
         private void btnDetails_Click(object sender, EventArgs e)

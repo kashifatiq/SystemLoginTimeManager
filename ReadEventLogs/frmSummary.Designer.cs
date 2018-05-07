@@ -32,6 +32,7 @@
             this.lblFirstLoginTime = new System.Windows.Forms.Label();
             this.btnDetails = new System.Windows.Forms.Button();
             this.lblTotalTimeInOffice = new System.Windows.Forms.Label();
+            this.lblsevenhours = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblheading
@@ -71,21 +72,34 @@
             // 
             // lblTotalTimeInOffice
             // 
-            this.lblTotalTimeInOffice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblTotalTimeInOffice.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTotalTimeInOffice.Font = new System.Drawing.Font("Calibri Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalTimeInOffice.ForeColor = System.Drawing.Color.Green;
-            this.lblTotalTimeInOffice.Location = new System.Drawing.Point(0, 172);
+            this.lblTotalTimeInOffice.Location = new System.Drawing.Point(0, 81);
             this.lblTotalTimeInOffice.Name = "lblTotalTimeInOffice";
             this.lblTotalTimeInOffice.Size = new System.Drawing.Size(513, 36);
             this.lblTotalTimeInOffice.TabIndex = 6;
             this.lblTotalTimeInOffice.Text = "lblTotalTimeInOffice";
             this.lblTotalTimeInOffice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblsevenhours
+            // 
+            this.lblsevenhours.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblsevenhours.Font = new System.Drawing.Font("Calibri Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsevenhours.ForeColor = System.Drawing.Color.Green;
+            this.lblsevenhours.Location = new System.Drawing.Point(0, 117);
+            this.lblsevenhours.Name = "lblsevenhours";
+            this.lblsevenhours.Size = new System.Drawing.Size(513, 36);
+            this.lblsevenhours.TabIndex = 7;
+            this.lblsevenhours.Text = "lblsevenhours";
+            this.lblsevenhours.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 266);
+            this.Controls.Add(this.lblsevenhours);
             this.Controls.Add(this.lblTotalTimeInOffice);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.lblFirstLoginTime);
@@ -103,6 +117,7 @@
         private System.Windows.Forms.Label lblFirstLoginTime;
         private System.Windows.Forms.Button btnDetails;
         private System.Windows.Forms.Label lblTotalTimeInOffice;
+        private System.Windows.Forms.Label lblsevenhours;
 
     }
 }
